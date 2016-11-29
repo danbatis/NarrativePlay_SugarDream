@@ -1,0 +1,430 @@
+fileFormatVersion: 2
+guid: aff0bb2abfa179f45a39d97538ece14c
+timeCreated: 1479710067
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: RobotBoyRunSprite_0
+    21300002: RobotBoyRunSprite_1
+    21300004: RobotBoyRunSprite_2
+    21300006: RobotBoyRunSprite_3
+    21300008: RobotBoyRunSprite_4
+    21300010: RobotBoyRunSprite_5
+    21300012: RobotBoyRunSprite_6
+    21300014: RobotBoyRunSprite_7
+    21300016: RobotBoyRunSprite_8
+    21300018: RobotBoyRunSprite_9
+    21300020: RobotBoyRunSprite_10
+    21300022: RobotBoyRunSprite_11
+    21300024: RobotBoyRunSprite_12
+    21300026: RobotBoyRunSprite_13
+    21300028: RobotBoyRunSprite_14
+    21300030: RobotBoyRunSprite_15
+    21300032: RobotBoyRunSprite_16
+    21300034: RobotBoyRunSprite_17
+    21300036: RobotBoyRunSprite_18
+    21300038: RobotBoyRunSprite_19
+    21300040: RobotBoyRunSprite_20
+    21300042: RobotBoyRunSprite_21
+    21300044: RobotBoyRunSprite_22
+    21300046: RobotBoyRunSprite_23
+    21300048: RobotBoyRunSprite_24
+    21300050: RobotBoyRunSprite_25
+    21300052: RobotBoyRunSprite_26
+    21300054: RobotBoyRunSprite_27
+    21300056: RobotBoyRunSprite_28
+    21300058: RobotBoyRunSprite_29
+    21300060: RobotBoyRunSprite_30
+    21300062: RobotBoyRunSprite_31
+    21300064: RobotBoyRunSprite_32
+    21300066: RobotBoyRunSprite_33
+    21300068: RobotBoyRunSprite_34
+    21300070: RobotBoyRunSprite_35
+    21300072: RobotBoyRunSprite_36
+    21300074: RobotBoyRunSprite_37
+    21300076: RobotBoyRunSprite_38
+    21300078: RobotBoyRunSprite_39
+    21300080: RobotBoyRunSprite_40
+    21300082: RobotBoyRunSprite_41
+    21300084: RobotBoyRunSprite_42
+    21300086: RobotBoyRunSprite_43
+    21300088: RobotBoyRunSprite_44
+    21300090: RobotBoyRunSprite_45
+    21300092: RobotBoyRunSprite_46
+    21300094: RobotBoyRunSprite_47
+    21300096: RobotBoyRunSprite_48
+    21300098: RobotBoyRunSprite_49
+    21300100: RobotBoyRunSprite_50
+    21300102: RobotBoyRunSprite_51
+    21300104: RobotBoyRunSprite_52
+    21300106: RobotBoyRunSprite_53
+    21300108: RobotBoyRunSprite_54
+    21300110: RobotBoyRunSprite_55
+    21300112: RobotBoyRunSprite_56
+    21300114: RobotBoyRunSprite_57
+    21300116: RobotBoyRunSprite_58
+    21300118: RobotBoyRunSprite_59
+    21300120: RobotBoyRunSprite_60
+    21300122: RobotBoyRunSprite_61
+    21300124: RobotBoyRunSprite_62
+    21300126: RobotBoyRunSprite_63
+    21300128: RobotBoyRunSprite_64
+    21300130: RobotBoyRunSprite_65
+    21300132: RobotBoyRunSprite_66
+    21300134: RobotBoyRunSprite_67
+    21300136: RobotBoyRunSprite_68
+    21300138: RobotBoyRunSprite_69
+    21300140: RobotBoyRunSprite_70
+    21300142: RobotBoyRunSprite_71
+    21300144: RobotBoyRunSprite_72
+    21300146: RobotBoyRunSprite_73
+    21300148: RobotBoyRunSprite_74
+    21300150: RobotBoyRunSprite_75
+    21300152: RobotBoyRunSprite_76
+    21300154: RobotBoyRunSprite_77
+    21300156: RobotBoyRunSprite_78
+    21300158: RobotBoyRunSprite_79
+    21300160: RobotBoyRunSprite_80
+    21300162: RobotBoyRunSprite_81
+    21300164: RobotBoyRunSprite_82
+    21300166: RobotBoyRunSprite_83
+    21300168: RobotBoyRunSprite_84
+    21300170: RobotBoyRunSprite_85
+    21300172: RobotBoyRunSprite_86
+    21300174: RobotBoyRunSprite_87
+    21300176: RobotBoyRunSprite_88
+    21300178: RobotBoyRunSprite_89
+    21300180: RobotBoyRunSprite_90
+    21300182: RobotBoyRunSprite_91
+    21300184: RobotBoyRunSprite_92
+    21300186: RobotBoyRunSprite_93
+    21300188: RobotBoyRunSprite_94
+    21300190: RobotBoyRunSprite_95
+    21300192: RobotBoyRunSprite_96
+    21300194: RobotBoyRunSprite_97
+    21300196: RobotBoyRunSprite_98
+    21300198: RobotBoyRunSprite_99
+    21300200: RobotBoyRunSprite_100
+    21300202: RobotBoyRunSprite_101
+    21300204: RobotBoyRunSprite_102
+    21300206: RobotBoyRunSprite_103
+    21300208: RobotBoyRunSprite_104
+    21300210: RobotBoyRunSprite_105
+    21300212: RobotBoyRunSprite_106
+    21300214: RobotBoyRunSprite_107
+    21300216: RobotBoyRunSprite_108
+    21300218: RobotBoyRunSprite_109
+    21300220: RobotBoyRunSprite_110
+    21300222: RobotBoyRunSprite_111
+    21300224: RobotBoyRunSprite_112
+    21300226: RobotBoyRunSprite_113
+    21300228: RobotBoyRunSprite_114
+    21300230: RobotBoyRunSprite_115
+    21300232: RobotBoyRunSprite_116
+    21300234: RobotBoyRunSprite_117
+    21300236: RobotBoyRunSprite_118
+    21300238: RobotBoyRunSprite_119
+    21300240: RobotBoyRunSprite_120
+    21300242: RobotBoyRunSprite_121
+    21300244: RobotBoyRunSprite_122
+    21300246: RobotBoyRunSprite_123
+    21300248: RobotBoyRunSprite_124
+    21300250: RobotBoyRunSprite_125
+    21300252: RobotBoyRunSprite_126
+    21300254: RobotBoyRunSprite_127
+    21300256: RobotBoyRunSprite_128
+    21300258: RobotBoyRunSprite_129
+    21300260: RobotBoyRunSprite_130
+    21300262: RobotBoyRunSprite_131
+    21300264: RobotBoyRunSprite_132
+    21300266: RobotBoyRunSprite_133
+    21300268: RobotBoyRunSprite_134
+    21300270: RobotBoyRunSprite_135
+    21300272: RobotBoyRunSprite_136
+    21300274: RobotBoyRunSprite_137
+    21300276: RobotBoyRunSprite_138
+    21300278: RobotBoyRunSprite_139
+    21300280: RobotBoyRunSprite_140
+    21300282: RobotBoyRunSprite_141
+    21300284: RobotBoyRunSprite_142
+    21300286: RobotBoyRunSprite_143
+    21300288: RobotBoyRunSprite_144
+    21300290: RobotBoyRunSprite_145
+    21300292: RobotBoyRunSprite_146
+    21300294: RobotBoyRunSprite_147
+    21300296: RobotBoyRunSprite_148
+    21300298: RobotBoyRunSprite_149
+    21300300: RobotBoyRunSprite_150
+    21300302: RobotBoyRunSprite_151
+    21300304: RobotBoyRunSprite_152
+    21300306: RobotBoyRunSprite_153
+    21300308: RobotBoyRunSprite_154
+    21300310: RobotBoyRunSprite_155
+    21300312: RobotBoyRunSprite_156
+    21300314: RobotBoyRunSprite_157
+    21300316: RobotBoyRunSprite_158
+    21300318: RobotBoyRunSprite_159
+    21300320: RobotBoyRunSprite_160
+    21300322: RobotBoyRunSprite_161
+    21300324: RobotBoyRunSprite_162
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_2
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_3
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1773
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_8
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_9
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_10
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_11
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1498
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RobotBoyRunSprite_15
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1223
+        width: 275
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
