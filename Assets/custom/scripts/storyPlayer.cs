@@ -52,6 +52,11 @@ public class storyPlayer : MonoBehaviour {
 	GameObject midOpt;
 	GameObject leftOpt;
 
+	AudioSource myAudio;
+	public AudioClip leftButtonSound;
+	public AudioClip middleButtonSound;
+	public AudioClip rightButtonSound;
+
 	// Use this for initialization
 	void Start () {
 		eventSys = GameObject.Find(gameObject.name + "/EventSystem");
@@ -74,6 +79,7 @@ public class storyPlayer : MonoBehaviour {
 		texto = textChapters[chapter_i];
 		Debug.Log ("length of current text: "+texto.Length);
 
+		myAudio = GetComponent<AudioSource> ();
 		if (frameImages.Length != imageChapters.Length) {
 			Time.timeScale = 0;
 			Debug.Log ("Error! The frameImages and imageChapters array must have the same length, one specifies when/where to display the images added to the other");
@@ -234,6 +240,7 @@ public class storyPlayer : MonoBehaviour {
 		leftOpt.SetActive (enableGuys);
 	}
 	public void RightOption(){
+		myAudio.PlayOneShot(rightButtonSound);
 		Debug.Log ("right option selected");
 		if (rightOptionShort != null) {
 			GameObject.Instantiate (rightOptionShort, transform.position, transform.rotation);
@@ -248,6 +255,7 @@ public class storyPlayer : MonoBehaviour {
 	}
 	public void MiddleOption(){
 		Debug.Log ("middle option selected");
+		myAudio.PlayOneShot(middleButtonSound);
 		if (middleOptionShort != null) {
 			GameObject.Instantiate (middleOptionShort, transform.position, transform.rotation);
 			Destroy (gameObject);
@@ -261,6 +269,7 @@ public class storyPlayer : MonoBehaviour {
 	}
 	public void LeftOption(){
 		Debug.Log ("left option selected");
+		myAudio.PlayOneShot(leftButtonSound);
 		if (leftOptionShort != null) {
 			GameObject.Instantiate (leftOptionShort, transform.position, transform.rotation);
 			Destroy (gameObject);
