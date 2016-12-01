@@ -57,6 +57,12 @@ public class storyPlayer : MonoBehaviour {
 	public AudioClip middleButtonSound;
 	public AudioClip rightButtonSound;
 
+	bool leftOption;
+	bool middleOption;
+	bool rightOption;
+
+	string spaceCode = " ";
+
 	// Use this for initialization
 	void Start () {
 		eventSys = GameObject.Find(gameObject.name + "/EventSystem");
@@ -84,6 +90,12 @@ public class storyPlayer : MonoBehaviour {
 			Time.timeScale = 0;
 			Debug.Log ("Error! The frameImages and imageChapters array must have the same length, one specifies when/where to display the images added to the other");
 		}
+
+		//available options
+		leftOption = leftOptionShort!=null;
+		rightOption = rightOptionShort!=null;
+		middleOption = middleOptionShort!=null;
+		Debug.Log ("current res: "+Screen.width.ToString() + " per "+ Screen.height.ToString());
 	}
 	
 	// Update is called once per frame
@@ -128,10 +140,10 @@ public class storyPlayer : MonoBehaviour {
 		else {			
 			skipMsg.enabled = canSkip;
 
-			if (Input.GetKeyDown ("down")) {
+			if (Input.GetKeyDown ("down") || Input.GetKeyDown(KeyCode.Return) ) {
 				//Debug.Log ("key pressed");
 				if (canSkip || finishedLine) {				
-					textOffset += maxCharsPerLine;
+					textOffset += text_i;
 					if (textOffset < texto.Length) {
 						resetLine ();
 					} else {
@@ -155,7 +167,7 @@ public class storyPlayer : MonoBehaviour {
 				}
 			}
 			if (Time.time - startedTime >= timeSpan) {
-				if (text_i < maxCharsPerLine && text_i + textOffset < texto.Length) {
+				if (text_i < maxCharsPerLine && text_i + textOffset < texto.Length && WordPredictor()) {
 					textContent.text += texto [text_i + textOffset];
 					text_i += 1;
 				} else {
@@ -168,6 +180,18 @@ public class storyPlayer : MonoBehaviour {
 				startedTime = Time.time;
 			}
 		}
+	}
+	bool WordPredictor(){		
+		int aux_i = text_i;
+		while (aux_i < maxCharsPerLine && aux_i + textOffset< texto.Length) {
+			if (texto [aux_i + textOffset] == spaceCode[0])
+				return true;
+			aux_i += 1;
+		}
+		if (aux_i + textOffset >= texto.Length)
+			return true;
+		else
+			return false;
 	}
 	void FadeINimage(){
 		timeSpan = blinkSpan;
@@ -226,7 +250,7 @@ public class storyPlayer : MonoBehaviour {
 
 	IEnumerator mightSkip() {
 		canSkip = true;
-		while (text_i < maxCharsPerLine && text_i+textOffset < texto.Length) {
+		while (text_i < maxCharsPerLine && text_i+textOffset < texto.Length && WordPredictor()) {
 			textContent.text += texto [text_i+textOffset];
 			text_i += 1;
 		}
@@ -235,9 +259,10 @@ public class storyPlayer : MonoBehaviour {
 	}
 	void EnableOptions(bool enableGuys){
 		eventSys.SetActive (enableGuys);
-		rightOpt.SetActive (enableGuys);
-		midOpt.SetActive (enableGuys);
-		leftOpt.SetActive (enableGuys);
+
+		rightOpt.SetActive (enableGuys && rightOption);
+		midOpt.SetActive (enableGuys && middleOption);
+		leftOpt.SetActive (enableGuys && leftOption);
 	}
 	public void RightOption(){
 		myAudio.PlayOneShot(rightButtonSound);

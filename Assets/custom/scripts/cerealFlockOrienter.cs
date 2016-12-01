@@ -21,6 +21,15 @@ public class cerealFlockOrienter : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log ("Collided with: "+other.name);
+		if (other.transform.parent) {
+			if (other.transform.parent.name == "EDdrone") {
+				Debug.Log ("hit ED drone");
+				other.GetComponentInParent<CerealCounter> ().CerealHit ();
+			} 
+		}
+		//else {
+		//	Debug.Log ("hit something else");
+		//}
+		//Debug.Log ("Collided with: "+other.name);
 	}
 }

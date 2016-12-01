@@ -1,17 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\custom\scripts\storyPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\custom\scripts\physics2DControl.cs">
     <Files>
       <File FileName="Assets\custom\scripts\AudioSpectrum.cs" Line="1" Column="1" />
       <File FileName="Assets\custom\scripts\MoovingPlataform.cs" Line="1" Column="1" />
-      <File FileName="Assets\custom\scripts\physics2DControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\custom\scripts\physics2DControl.cs" Line="139" Column="7" />
       <File FileName="Assets\custom\scripts\elevatorRunner.cs" Line="1" Column="1" />
       <File FileName="Assets\custom\scripts\cerealAim.cs" Line="1" Column="1" />
       <File FileName="Assets\custom\scripts\cerealFlockOrienter.cs" Line="1" Column="1" />
       <File FileName="Assets\custom\scripts\story2Dmanager.cs" Line="1" Column="1" />
-      <File FileName="Assets\custom\scripts\storyPlayer.cs" Line="58" Column="9" />
+      <File FileName="Assets\custom\scripts\storyPlayer.cs" Line="184" Column="23" />
       <File FileName="Assets\custom\scripts\fireDancer.cs" Line="1" Column="1" />
       <File FileName="Assets\custom\scripts\cameraFollow.cs" Line="1" Column="1" />
+      <File FileName="Assets\custom\scripts\CerealCounter.cs" Line="1" Column="1" />
+      <File FileName="Assets\custom\scripts\audioTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets\custom\scripts\creepingFire.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

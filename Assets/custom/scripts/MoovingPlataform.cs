@@ -21,6 +21,7 @@ public class MoovingPlataform : MonoBehaviour {
 	float oldAmpy;
 	bool absorbing=false;
 	bool damped=false;
+	bool dead;
 
 	// Use this for initialization
 	void Start () {
@@ -34,22 +35,28 @@ public class MoovingPlataform : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (spectrum && mySpectrum != null) {
-			newpos.y += mySpectrum.spectrum [spectrumIndex] * specGain*Time.deltaTime;	
-		} 
-		else{
-			if (ampy != 0) {
-				newpos.y += ampy * Mathf.Sin (freqy * Time.time + freqOffset) * Time.deltaTime;
-				if (absorbing) {
-					DecreaseOscillation (Mathf.Sin (freqy * Time.time + freqOffset) );					
+		if (dead) {
+			if (newpos.y > -1.5f) {
+				newpos.y -= 2*dampRate * Time.deltaTime;
+				myTransform.position = newpos;
+			}
+		} else {
+			if (spectrum && mySpectrum != null) {
+				newpos.y += mySpectrum.spectrum [spectrumIndex] * specGain * Time.deltaTime;	
+			} else {
+				if (ampy != 0) {
+					newpos.y += ampy * Mathf.Sin (freqy * Time.time + freqOffset) * Time.deltaTime;
+					if (absorbing) {
+						DecreaseOscillation (Mathf.Sin (freqy * Time.time + freqOffset));					
+					}
 				}
 			}
-		}
-		if (ampx != 0f) {
-			newpos.x += ampx * Mathf.Sin (freqx * Time.time)*Time.deltaTime;
-		}
+			if (ampx != 0f) {
+				newpos.x += ampx * Mathf.Sin (freqx * Time.time) * Time.deltaTime;
+			}
 
-		myTransform.position = newpos;
+			myTransform.position = newpos;
+		}
 	}
 	public void absorbNewWeight(){
 		Debug.Log (gameObject.name+" absorbing weight...");
@@ -85,5 +92,9 @@ public class MoovingPlataform : MonoBehaviour {
 		freqOffset = 0f;
 		newpos.y = initialPos.y;
 		absorbing = false;
+	}
+	public void Death(){
+		if(!dead)
+			dead=true;
 	}
 }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 [RequireComponent (typeof(Rigidbody2D))]
 
@@ -28,6 +29,8 @@ public class physics2DControl : MonoBehaviour {
 	private bool m_Jump;
 	private bool m_FacingRight = true;
 	story2Dmanager gameManager;
+
+	public String nextSceneName;
 
 	// Use this for initialization
 	void Awake () {
@@ -126,13 +129,16 @@ public class physics2DControl : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "elevator") {
+			SceneManager.LoadScene (nextSceneName);
 			Debug.Log ("Entered elevator trigger. Success!!!");
 		}
 		else {
 			Debug.Log ("Player entered other trigger: "+other.name);
 			if (other.name == "killerBoundary") {
-				gameManager.playerDie ();
+				Application.LoadLevel (Application.loadedLevel);
+				//gameManager.playerDie ();
 			}
 		}
 	}
+
 }

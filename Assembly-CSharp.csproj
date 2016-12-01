@@ -47,10 +47,13 @@
   <ItemGroup>
      <Compile Include="Assets\custom\scripts\AudioSpectrum.cs" />
      <Compile Include="Assets\custom\scripts\CannonScript.cs" />
+     <Compile Include="Assets\custom\scripts\CerealCounter.cs" />
      <Compile Include="Assets\custom\scripts\MoovingPlataform.cs" />
+     <Compile Include="Assets\custom\scripts\audioTrigger.cs" />
      <Compile Include="Assets\custom\scripts\cameraFollow.cs" />
      <Compile Include="Assets\custom\scripts\cerealAim.cs" />
      <Compile Include="Assets\custom\scripts\cerealFlockOrienter.cs" />
+     <Compile Include="Assets\custom\scripts\creepingFire.cs" />
      <Compile Include="Assets\custom\scripts\elevatorRunner.cs" />
      <Compile Include="Assets\custom\scripts\fireDancer.cs" />
      <Compile Include="Assets\custom\scripts\physics2DControl.cs" />
